@@ -1,0 +1,20 @@
+
+h1 {
+    color: seashell;
+}
+
+body {
+    background-color: purple;
+
+}
+
+.card:hover {
+    border-left-color: yellow;
+    border-left-width: 1em;
+}
+.card{
+    border-left-color: white;
+    border-left-width: 1em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
