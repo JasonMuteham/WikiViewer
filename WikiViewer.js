@@ -25,7 +25,9 @@ function loadData(sObj){
         var cardTextHTML = document.getElementById("card-text-"+f); 
         cardTitleHTML.innerHTML = sObj.query.search[f].title;
         cardTextHTML.innerHTML = sObj.query.search[f].snippet + '....';
-        cardHTML.className = cardHTML.className.replace('invisible',"visible");
+        cardHTML.classList.remove('animated', 'zoomIn');
+        cardHTML.classList.add('animated', 'zoomIn');
+        cardHTML.classList.replace('invisible',"visible");
     }
 }
 
@@ -44,7 +46,7 @@ function goButton(event){
 
     var inp = document.getElementById("search");
     if (inp.value == ""){return};
-    
+
     searchWiki(inp.value);
 }
 

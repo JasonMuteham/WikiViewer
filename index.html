@@ -5,14 +5,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
+          <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
         <link rel="stylesheet" href="WikiViewer.css">
 
     </head>
     <body>
-        <div class="container-fluid">
+        <div class="container-fluid animated zoomIn">
 
             <div id="top-spacer" class="row my-3 text-center">
                 <div class="col">
@@ -25,11 +27,11 @@
                 <div class="col-3">
                     <div class="input-group">
                         <span class="input-group-btn">
-                            <a href = "https://en.wikipedia.org/wiki/Special:Random" class="btn btn-secondary" target="_blank">Random!</a>
+                            <a href = "https://en.wikipedia.org/wiki/Special:Random" class="btn btn-secondary animated pulse infinite" target="_blank">Random!</a>
                         </span>
                         <input id= "search" type="text" class="form-control" placeholder="Search for..." aria-label="Search for..." onkeypress="goButton(event)">
                         <span id="goButton" class="input-group-btn">
-                            <button class="btn btn-secondary" type="button">Go!</button>
+                            <button class="btn btn-secondary animated pulse infinite" type="button">Go!</button>
                         </span>
                     </div>
                 </div>
